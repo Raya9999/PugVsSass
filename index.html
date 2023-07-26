@@ -1,0 +1,132 @@
+
+<!-- mixin.pug--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <title>Pug and Sass</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body> 
+    <header>
+      <div class="header-content">
+        <p>Travel with Raya </p>
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#">RUNNING WITH ME</a></li>
+            <li><a href="#">RUNNER</a></li>
+            <li><a href="#">TRAVEL WITH ME</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">VOICE OVER</a></li>
+            <li><a href="#">DESTINATION</a></li>
+            <li><a href="#">MY GENERAL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="intro-section"><img class="intro-image" src="./images/Golden_Gate.jpg" alt="Intro Image">
+      <div class="intro-text">
+        <h2> <a href="#">Review of Golden Gate Bridge from blogger Raya</a></h2>
+        <p class="by-raya">By Raya</p>
+      </div>
+    </section>
+    <!-- features.pug-->
+    <div class="features-list">
+      <div class="feature-item"> 
+        <div class="feature-image"> <img src="./images/Paris.jpg" alt=""/></div>
+        <h3 class="feature-name">Paris</h3>
+        <div class="feature-description">
+          <p>Paris is the enchant...<a class="read-more" href="#">Read more</a>
+          </p>
+        </div>
+        <div class="feature-meta"> <span class="feature-rate"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></span></div>
+      </div>
+      <div class="feature-item"> 
+        <div class="feature-image"> <img src="./images/Rome.jpg" alt=""/></div>
+        <h3 class="feature-name">Rome</h3>
+        <div class="feature-description">
+          <p>Rome, the eternal ci...<a class="read-more" href="#">Read more</a>
+          </p>
+        </div>
+        <div class="feature-meta"> <span class="feature-rate"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></span></div>
+      </div>
+      <div class="feature-item"> 
+        <div class="feature-image"> <img src="./images/New_York.jpg" alt=""/></div>
+        <h3 class="feature-name">New York</h3>
+        <div class="feature-description">
+          <p>New York City, the B...<a class="read-more" href="#">Read more</a>
+          </p>
+        </div>
+        <div class="feature-meta"> <span class="feature-rate"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></span></div>
+      </div>
+    </div>
+    <!-- destination.pug-->
+    <section id="destination">
+      <div class="top-destination-container">
+        <h2>TOP DESTINATION</h2>
+      </div>
+      <div class="image-container"><img src="./images/destination.jpg" alt="Intro Image">
+        <div class="image-overlay">
+          <h2><a class="review-link" href="#">TRY MORE WITH ME</a></h2>
+        </div>
+      </div>
+    </section>
+    <!-- travel_tips.pug-->
+    <div class="travel-tips-container">
+      <div class="travel-tips">
+        <div class="travel-tip-item"> 
+          <div class="travel-tip-image"> <img src="./images/Travel_Tip_1.jpg" alt=""/></div>
+          <h3 class="travel-tip-title">Don't be alone</h3>
+          <div class="travel-tip-description">
+            <p>Don't be afraid to e...<a class="read-more" href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+        <div class="travel-tip-item"> 
+          <div class="travel-tip-image"> <img src="./images/Travel_Tip_2.jpg" alt=""/></div>
+          <h3 class="travel-tip-title">Enjoy your trips</h3>
+          <div class="travel-tip-description">
+            <p>Embrace every moment...<a class="read-more" href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+        <div class="travel-tip-item"> 
+          <div class="travel-tip-image"> <img src="./images/Travel_Tip_3.jpg" alt=""/></div>
+          <h3 class="travel-tip-title">Play with your team</h3>
+          <div class="travel-tip-description">
+            <p>Traveling with a tea...<a class="read-more" href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+        <div class="travel-tip-item"> 
+          <div class="travel-tip-image"> <img src="./images/Travel_Tip_4.jpg" alt=""/></div>
+          <h3 class="travel-tip-title">Flying is Fun</h3>
+          <div class="travel-tip-description">
+            <p>Traveling by plane c...<a class="read-more" href="#">Read more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- destination.pug-->
+    <section id="destination">
+      <div class="top-destination-container">
+        <h2>YOU WANT MORE?</h2>
+      </div>
+      <div class="image-container"><img src="./images/other.jpg" alt="Intro Image">
+        <div class="image-overlay">
+          <h2><a class="link_blog" href="https://www.youtube.com/@VanessaTiiu">FIND MORE HERE</a></h2>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2023 My Website. All rights reserved.</p>
+        <div class="social-icons"><a class="social-icon" href="#"><img src="./images/fb.png" alt="Facebook"></a><a class="social-icon" href="#"><img src="./images/Instagram.png" alt="Instagram"></a><a class="social-icon" href="#"><img src="./images/Pin.png" alt="Pinterest"></a></div>
+      </div>
+    </footer>
+  </body>
+</html>
