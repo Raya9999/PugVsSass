@@ -1,0 +1,36 @@
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+  
+    // Đảm bảo các ảnh không bị bóp méo khi kéo căng
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    
+    .feature-item {
+      text-align: center;
+    }
+  }
+.feature-item{
+    background-color: white;
+    border: 2px solid #dee0e8;
+    border-radius: 16px;
+    padding: 40px 40px 20px;
+}  
+.feature-image{
+    aspect-ratio: 1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+}
+.star {
+  color: #ffd700;
+  font-size: 24px; 
+}
+

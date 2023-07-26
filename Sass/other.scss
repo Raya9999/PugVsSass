@@ -1,0 +1,79 @@
+// destination.scss
+
+// TOP DESTINATION
+#destination .top-destination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+    background-color: #ffffff; 
+}
+
+// Style cho "TOP DESTINATION"
+#destination h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ad74e3; 
+}
+
+#destination .image-container {
+    position: relative;
+    width: 60%; 
+    height: 50vh;
+    overflow: hidden;
+    margin: 30px auto; 
+}
+
+// Định nghĩa ảnh
+#destination .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+// Hiệu ứng ảnh
+#destination .image-container:hover img {
+    transform: scale(1.05);
+}
+
+// Nội dung ảnh
+#destination .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(71, 68, 68, 0.5);
+    color: #5f5454;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    h2 a.review-link {
+        color: #f4eeed; 
+        text-decoration: none;
+}
+
+
+#destination .image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+
+#destination .image-overlay h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8eeee;
+    margin-bottom: 10px;
+}
+
+#destination .image-overlay p {
+    font-size: 16px;
+}
+}
