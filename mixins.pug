@@ -1,0 +1,32 @@
+// mixin.pug
+mixin featureItem(images, name, description, rating)
+    .feature-item  
+        .feature-image 
+            img(src= images , alt="")
+        h3.feature-name= name 
+        .feature-description
+            p
+                if description.length > 100
+                    | #{description.slice(0, 20)}...
+                    a(href="#" class="read-more") Read more
+                else
+                    | #{description}
+        .feature-meta 
+            span.feature-rate
+                each star in Array(rating)
+                    span.star ★
+
+
+mixin travelTipItem(images, name, description)
+    .travel-tip-item  
+        .travel-tip-image 
+            img(src= images , alt="")
+        h3.travel-tip-title= name 
+        .travel-tip-description
+            p
+                if description.length > 100
+                    | #{description.slice(0, 20)}...
+                    a(href="#" class="read-more") Read more
+                else
+                    | #{description}
+        
